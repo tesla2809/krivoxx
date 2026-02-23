@@ -6,8 +6,8 @@ import { MapSection } from '@/components/contact/MapSection';
 import { Phone, Mail, MapPin, Clock, Headphones } from 'lucide-react';
 
 export const metadata = {
-  title: 'Contact Us - KRIVOX',
-  description: "Get in touch with KRIVOX. We're here to help your business grow digitally.",
+  title: 'Contact Us - KRIVOXX',
+  description: "Get in touch with KRIVOXX. We're here to help your business grow digitally.",
 };
 
 // Official WhatsApp SVG logo
@@ -35,14 +35,14 @@ export default function ContactPage() {
               <div className="text-center mb-6 sm:mb-8">
                 <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary rounded-full px-3 py-1.5 mb-3 sm:mb-4">
                   <Headphones className="w-3 h-3 sm:w-3.5 sm:h-3.5" />
-                  <span className="text-xs font-semibold">Contact KRIVOX</span>
+                  <span className="text-xs font-semibold">Contact KRIVOXX</span>
                 </div>
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight px-2">
                   Let's Build Your{' '}
                   <span className="text-primary">Digital Success</span> Together
                 </h1>
                 <p className="text-sm sm:text-base md:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed px-4">
-                  Ready to transform your business? Share your vision with us, and let's discuss how KRIVOX can help you achieve your digital goals.
+                  Ready to transform your business? Share your vision with us, and let's discuss how KRIVOXX can help you achieve your digital goals.
                 </p>
               </div>
             </FadeIn>

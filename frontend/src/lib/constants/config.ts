@@ -1,10 +1,10 @@
-// Site configuration for KRIVOX
+// Site configuration for KRIVOXX
 
 export const siteConfig = {
-  name: 'KRIVOX',
+  name: 'KRIVOXX',
   tagline: 'Your Digital Growth Partner',
-  description: 'We manage your digital growth & operations so you can focus on business.',
-  url: 'https://krivox.com',
+  description: 'We manage your digital growth & operations so you can focus on business. Serving Gandhidham, Kutch & all of Gujarat.',
+  url: 'https://krivoxx.com',
   ogImage: '/images/og-image.jpg',
   location: {
     city: 'Gandhidham',
@@ -12,9 +12,9 @@ export const siteConfig = {
     country: 'India',
   },
   contact: {
-    phone: '+91 99999 99999',
-    email: 'info@krivox.com',
-    whatsapp: '+919999999999',
+    phone: '+91 99988 13569',
+    email: 'aditya@krivoxx.com',
+    whatsapp: '+919998813569',
   },
   meta: {
     keywords: [
@@ -25,9 +25,11 @@ export const siteConfig = {
       'Gandhidham',
       'Kutch',
       'Gujarat',
+      'KRIVOXX',
+      'digital agency Gujarat',
     ],
-    author: 'KRIVOX Team',
-    themeColor: '#6366f1',
+    author: 'KRIVOXX Team',
+    themeColor: '#7c3aed',
   },
   features: {
     enableWhatsApp: true,

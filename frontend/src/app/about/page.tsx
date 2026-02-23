@@ -5,8 +5,8 @@ import { CTASection } from '@/components/home/CTASection';
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About Us - KRIVOX',
-  description: 'Learn about KRIVOX - Your trusted digital growth partner in Gandhidham & Kutch',
+  title: 'About Us - KRIVOXX',
+  description: 'Learn about KRIVOXX - Your trusted digital growth partner in Gandhidham & Kutch',
 };
 
 const teamMembers = [
@@ -54,7 +54,7 @@ export default function AboutPage() {
               <div className="text-center mb-6 sm:mb-8">
                 <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary rounded-full px-3 py-1.5 mb-3 sm:mb-4">
                   <Heart className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-current" />
-                  <span className="text-xs font-semibold">About KRIVOX</span>
+                  <span className="text-xs font-semibold">About KRIVOXX</span>
                 </div>
                 <h1 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 leading-tight px-2">
                   Trusted{' '}
@@ -138,9 +138,9 @@ export default function AboutPage() {
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-8">Our Story</h2>
               <div className="space-y-6 text-lg text-gray-700">
-                <p>KRIVOX was born from a simple observation: local businesses in Gandhidham and Kutch had incredible potential but lacked access to professional, affordable digital services that could help them grow.</p>
+                <p>KRIVOXX was born from a simple observation: local businesses in Gandhidham and Kutch had incredible potential but lacked access to professional, affordable digital services that could help them grow.</p>
                 <p>We saw businesses struggling with multiple vendors for different services - one for website, another for social media, someone else for ads, and yet another for automation. This fragmented approach was not only expensive but also inefficient.</p>
-                <p>That's when we decided to create KRIVOX - a one-stop solution that brings together everything a business needs to succeed digitally. From your first website to advanced automation systems, we handle it all under one roof.</p>
+                <p>That's when we decided to create KRIVOXX - a one-stop solution that brings together everything a business needs to succeed digitally. From your first website to advanced automation systems, we handle it all under one roof.</p>
                 <p>As a startup, we're committed to building lasting partnerships with businesses and helping them transform their digital presence with innovative, results-driven solutions.</p>
               </div>
             </div>
@@ -180,7 +180,7 @@ export default function AboutPage() {
             <div className="text-center mb-14">
               <div className="inline-flex items-center space-x-2 bg-primary/10 text-primary rounded-full px-3 py-1.5 mb-4">
                 <Users className="w-3.5 h-3.5" />
-                <span className="text-xs font-semibold">The People Behind KRIVOX</span>
+                <span className="text-xs font-semibold">The People Behind KRIVOXX</span>
               </div>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">Meet Our Team</h2>
               <p className="text-gray-600 mt-3 max-w-xl mx-auto text-base">
@@ -223,7 +223,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <FadeIn>
-              <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Why Businesses Choose KRIVOX</h2>
+              <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Why Businesses Choose KRIVOXX</h2>
             </FadeIn>
             <div className="space-y-6">
               {[

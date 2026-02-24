@@ -4,12 +4,6 @@ import { Target, Users, Lightbulb, Award, Heart, Sparkles, TrendingUp, Zap } fro
 import { FadeIn } from '@/components/animations/FadeIn';
 import { SlideIn } from '@/components/animations/SlideIn';
 import { CTASection } from '@/components/home/CTASection';
-import Image from 'next/image';
-
-export const metadata = {
-  title: 'About Us - KRIVOXX',
-  description: 'Learn about KRIVOXX - Your trusted digital growth partner in Gandhidham & Kutch',
-};
 
 const teamMembers = [
   {
@@ -196,13 +190,7 @@ export default function AboutPage() {
               <FadeIn key={index} delay={index * 0.1}>
                 <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden text-center border border-gray-100 hover:-translate-y-1">
                   <div className="relative w-full aspect-[3/4] overflow-hidden" style={{ backgroundColor: member.bgColor }}>
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
-                      style={{ objectPosition: member.objectPosition }}
-                    />
+                  
                     <div className="absolute top-0 left-0 right-0 h-1" style={{ backgroundColor: member.color }} />
                   </div>
                   <div className="p-4">

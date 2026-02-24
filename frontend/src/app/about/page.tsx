@@ -1,3 +1,5 @@
+'use client'
+
 import { Target, Users, Lightbulb, Award, Heart, Sparkles, TrendingUp, Zap } from 'lucide-react';
 import { FadeIn } from '@/components/animations/FadeIn';
 import { SlideIn } from '@/components/animations/SlideIn';

@@ -190,7 +190,7 @@ export default function AboutPage() {
               <FadeIn key={index} delay={index * 0.1}>
                 <div className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden text-center border border-gray-100 hover:-translate-y-1">
                   <div className="relative w-full aspect-[3/4] overflow-hidden" style={{ backgroundColor: member.bgColor }}>
-                  
+                
                     <div className="absolute top-0 left-0 right-0 h-1" style={{ backgroundColor: member.color }} />
                   </div>
                   <div className="p-4">

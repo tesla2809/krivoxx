@@ -1,5 +1,7 @@
 'use client'
 
+// then your imports
+import React from 'react';
 import Link from 'next/link';
 import { ArrowRight, Phone, Mail, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';

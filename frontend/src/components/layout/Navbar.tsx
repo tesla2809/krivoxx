@@ -1,5 +1,6 @@
 'use client';
 
+import { usePathname } from 'next/navigation';
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -10,19 +11,19 @@ import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { cn } from '@/lib/utils/cn';
 
 export function Navbar() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const { scrollY } = useScrollPosition();
-  const isScrolled = scrollY > 20;
-
+const pathname = usePathname();
+const isHome = pathname === "/";
   return (
     <nav
-      className={cn(
-        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-        isScrolled
-          ? "bg-[#0f0020]/90 backdrop-blur-lg border-b border-white/10 shadow-lg"
-          : "bg-transparent"
-      )}
-    >
+  className={cn(
+    "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+    isHome
+      ? isScrolled
+        ? "bg-[#0f0020]/90 backdrop-blur-lg border-b border-white/10 shadow-lg"
+        : "bg-transparent"
+      : "bg-[#0f0020]/95 backdrop-blur-lg border-b border-white/10"
+  )}
+>
       <div className="container flex items-center justify-between py-4">
 
         {/* Logo Section */}

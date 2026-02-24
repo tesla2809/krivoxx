@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link';
 import { ArrowRight, Phone, Mail, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';

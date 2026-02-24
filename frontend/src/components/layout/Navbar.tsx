@@ -1,7 +1,7 @@
 'use client';
 
-import { usePathname } from 'next/navigation';
 import { useState } from 'react';
+import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
@@ -11,22 +11,28 @@ import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { cn } from '@/lib/utils/cn';
 
 export function Navbar() {
-const pathname = usePathname();
-const isHome = pathname === "/";
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const pathname = usePathname();
+  const isHome = pathname === "/";
+
+  const { scrollY } = useScrollPosition();
+  const isScrolled = scrollY > 20;
+
   return (
     <nav
-  className={cn(
-    "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-    isHome
-      ? isScrolled
-        ? "bg-[#0f0020]/90 backdrop-blur-lg border-b border-white/10 shadow-lg"
-        : "bg-transparent"
-      : "bg-[#0f0020]/95 backdrop-blur-lg border-b border-white/10"
-  )}
->
+      className={cn(
+        "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
+        isHome
+          ? isScrolled
+            ? "bg-[#0f0020]/90 backdrop-blur-lg border-b border-white/10 shadow-lg"
+            : "bg-transparent"
+          : "bg-[#0f0020]/95 backdrop-blur-lg border-b border-white/10"
+      )}
+    >
       <div className="container flex items-center justify-between py-4">
 
-        {/* Logo Section */}
+        {/* Logo */}
         <Link href="/" className="flex items-center gap-3">
           <Image
             src="/logo.png"
@@ -59,7 +65,7 @@ const isHome = pathname === "/";
           </Link>
         </div>
 
-        {/* Mobile Toggle */}
+        {/* Mobile Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           className="lg:hidden text-white"

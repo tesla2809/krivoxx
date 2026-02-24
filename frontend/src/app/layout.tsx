@@ -1,12 +1,17 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import { Navbar } from '@/components/layout/Navbar';
-import { Footer } from '@/components/layout/Footer';
-import { WhatsAppButton } from '@/components/layout/WhatsAppButton';
-import { siteConfig } from '@/lib/constants/config';
+import type { Metadata } from "next";
+import { Poppins } from "next/font/google";
+import "./globals.css";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { WhatsAppButton } from "@/components/layout/WhatsAppButton";
+import { siteConfig } from "@/lib/constants/config";
 
-const inter = Inter({ subsets: ['latin'] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-poppins",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: `${siteConfig.name} - ${siteConfig.tagline}`,
@@ -26,11 +31,11 @@ export const metadata: Metadata = {
         alt: siteConfig.name,
       },
     ],
-    locale: 'en_IN',
-    type: 'website',
+    locale: "en_IN",
+    type: "website",
   },
   twitter: {
-    card: 'summary_large_image',
+    card: "summary_large_image",
     title: `${siteConfig.name} - ${siteConfig.tagline}`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
@@ -40,7 +45,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: '/logo.png',
+    icon: "/logo.png",
   },
   metadataBase: new URL(siteConfig.url),
 };
@@ -51,10 +56,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.className} data-scroll-behavior="smooth">
-      <body className="antialiased">
+    <html
+      lang="en"
+      className={`${poppins.variable} scroll-smooth`}
+    >
+      <body className="font-sans antialiased bg-black text-white">
         <Navbar />
-        <main className="min-h-screen">{children}</main>
+        <main className="min-h-screen">
+          {children}
+        </main>
         <Footer />
         {siteConfig.features.enableWhatsApp && <WhatsAppButton />}
       </body>

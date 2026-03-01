@@ -1,4 +1,4 @@
-// Pricing packages data for KRIVOX
+// Pricing packages data for KRIVOXX
 import { PricingPackage } from '@/types';
 
 export const pricingPackages: PricingPackage[] = [
@@ -101,6 +101,54 @@ export const addOnServices = [
     price: 15000,
     duration: 'one-time',
     description: 'Professional video content creation',
+  },
+];
+
+// Individual service pricing (shown in the Services section of pricing page)
+export const servicePricing = [
+  {
+    category: 'Digital Presence & Branding',
+    color: '#7c3aed',
+    services: [
+      { name: 'Basic Business Website (5 pages)', price: 15000, duration: 'one-time' },
+      { name: 'Advanced Website (10+ pages)', price: 35000, duration: 'one-time' },
+      { name: 'Logo & Brand Identity Pack', price: 8000, duration: 'one-time' },
+      { name: 'Social Media Profile Setup', price: 5000, duration: 'one-time' },
+      { name: 'Content Writing (per page)', price: 1500, duration: 'one-time' },
+    ],
+  },
+  {
+    category: 'Lead Generation & Marketing',
+    color: '#10b981',
+    services: [
+      { name: 'Meta Ads Management', price: 12000, duration: 'month' },
+      { name: 'Google Ads Campaign', price: 10000, duration: 'month' },
+      { name: 'YouTube Marketing', price: 8000, duration: 'month' },
+      { name: 'Lead Generation System Setup', price: 20000, duration: 'one-time' },
+      { name: 'WhatsApp Marketing Setup', price: 6000, duration: 'one-time' },
+    ],
+  },
+  {
+    category: 'Business Automation',
+    color: '#f59e0b',
+    services: [
+      { name: 'CRM Setup & Training', price: 18000, duration: 'one-time' },
+      { name: 'Virtual Assistant (Part-time)', price: 15000, duration: 'month' },
+      { name: 'Virtual Assistant (Full-time)', price: 25000, duration: 'month' },
+      { name: 'WhatsApp Automation Bot', price: 12000, duration: 'one-time' },
+      { name: 'Bulk Data Management', price: 8000, duration: 'one-time' },
+    ],
+  },
+  {
+    category: 'Tech & Advanced Solutions',
+    color: '#6366f1',
+    services: [
+      { name: 'Mobile App Development', price: 80000, duration: 'one-time' },
+      { name: 'Custom Web Application', price: 50000, duration: 'one-time' },
+      { name: 'Business Dashboard', price: 25000, duration: 'one-time' },
+      { name: 'E-commerce Store', price: 30000, duration: 'one-time' },
+      { name: 'Maintenance & Support', price: 5000, duration: 'month' },
+    ],
   },
 ];
 

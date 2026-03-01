@@ -48,15 +48,15 @@ export function AccordionItem({ value, trigger, children }: AccordionItemProps) 
   const isOpen = openItems.includes(value)
 
   return (
-    <div className="border border-gray-200 rounded-lg overflow-hidden">
+    <div className="border border-gray-200 rounded-lg overflow-hidden bg-white">
       <button
         onClick={() => toggleItem(value)}
-        className="flex w-full items-center justify-between p-4 text-left font-medium hover:bg-gray-50 transition-colors"
+        className="flex w-full items-center justify-between p-4 text-left font-medium text-gray-900 hover:bg-gray-50 transition-colors"
       >
-        <span>{trigger}</span>
+        <span className="text-gray-900">{trigger}</span>
         <ChevronDown
           className={cn(
-            "h-5 w-5 text-gray-500 transition-transform duration-200",
+            "h-5 w-5 text-gray-500 transition-transform duration-200 flex-shrink-0 ml-2",
             isOpen && "transform rotate-180"
           )}
         />
